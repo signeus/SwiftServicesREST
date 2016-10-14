@@ -1,14 +1,16 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="e8R-qr-AuF">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WebServices" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +18,95 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEZ-ky-Ib4">
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Segunda pantalla"/>
+                                <connections>
+                                    <segue destination="FN8-Jx-333" kind="show" id="VYw-K1-Wbl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOF-B1-d2E" userLabel="Request Button">
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="sendButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5JY-SP-qyq"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aOF-B1-d2E" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="89" id="BaL-i0-e0p"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aOF-B1-d2E" secondAttribute="bottom" constant="20" id="EIT-m3-Huq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZEZ-ky-Ib4" secondAttribute="trailing" constant="89" id="Jfn-34-8Dl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aOF-B1-d2E" secondAttribute="trailing" constant="107" id="X2a-k4-5fo"/>
+                            <constraint firstItem="ZEZ-ky-Ib4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Z3G-lx-Res"/>
+                            <constraint firstItem="aOF-B1-d2E" firstAttribute="top" secondItem="ZEZ-ky-Ib4" secondAttribute="bottom" constant="515" id="cV9-GQ-RTd"/>
+                            <constraint firstItem="ZEZ-ky-Ib4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="89" id="ijj-4r-i4H"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Z4S-WW-ddz"/>
+                    <connections>
+                        <outlet property="sendButton" destination="aOF-B1-d2E" id="a0x-OC-JXX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="96m-p5-YDX">
+            <objects>
+                <viewController id="FN8-Jx-333" customClass="SecondViewController" customModule="WebServices" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="se3-vz-4Hv"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dra-sa-GI9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="So9-io-RZZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EgR-PQ-mdh">
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Request"/>
+                                <connections>
+                                    <action selector="sendRequest:" destination="FN8-Jx-333" eventType="touchUpInside" id="y7i-aT-Qqr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EgR-PQ-mdh" firstAttribute="leading" secondItem="So9-io-RZZ" secondAttribute="leadingMargin" constant="100" id="J7w-BN-she"/>
+                            <constraint firstItem="Dra-sa-GI9" firstAttribute="top" secondItem="EgR-PQ-mdh" secondAttribute="bottom" constant="20" id="a6o-wF-Bl8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EgR-PQ-mdh" secondAttribute="trailing" constant="101" id="nWt-v7-OJO"/>
+                            <constraint firstItem="EgR-PQ-mdh" firstAttribute="top" secondItem="se3-vz-4Hv" secondAttribute="bottom" constant="553" id="wdY-00-8mA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="requestButton" destination="EgR-PQ-mdh" id="cMR-1o-dbO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zMu-6N-wsz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2024.8" y="138.98050974512745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wip-7h-ShG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e8R-qr-AuF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Hh-0Q-rRJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5NH-rk-km9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sfr-hF-tUd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>

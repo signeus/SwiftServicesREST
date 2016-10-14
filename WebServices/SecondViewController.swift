@@ -9,6 +9,8 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    
+    @IBOutlet weak var requestButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,16 +22,14 @@ class SecondViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func sendRequest(_ sender: AnyObject) {
+        HttpClient().get(url: "http://jsonplaceholder.typicode.com/posts/1") { (data: Data?, urlResponse: URLResponse?, error: Error?) in
+            let map = JsonDecoder().mapFromData(withData: data!)
+            let datoEntity: DatoEntity = DatoEntity()
+            datoEntity.populateEntity(map: map)
+            
+            print(datoEntity.title!)
+        }
     }
-    */
-
 }

@@ -1,3 +1,4 @@
+
 //
 //  IPopulable.swift
 //  WebServices
@@ -7,3 +8,7 @@
 //
 
 import Foundation
+
+protocol IPopulable {
+    func populateEntity(map: [String: AnyObject])
+}

@@ -8,29 +8,26 @@
 
 import Foundation
 
-class HttpController {
-    var Url: String
-    
-    
-    init(url: String){
-        self.Url = url
-    }
-    
-    public func CreateStandarSession() -> URLSession{
+class HttpClient {
+    private func createStandardSession() -> URLSession{
         let config = URLSessionConfiguration.default
         return URLSession(configuration: config)
     }
     
-    public func CreateUrlRequest() throws -> URLRequest{
-        guard let url = URL(string: Url) else{
+    private func createUrlRequest(url: String) -> URLRequest{
+        guard let url = URL(string: url) else{
             print("Error, cannot create URL")
-            throw ErrorHttpController.cannotCreateURL
+            return URLRequest(url: URL(string: "")!)
         }
         
         return URLRequest(url: url)
     }
     
-    enum ErrorHttpController: Error {
-        case cannotCreateURL
+    public func get(url: String, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Swift.Void){
+        
+        let session = createStandardSession()
+        let urlRequest = createUrlRequest(url: url)
+        
+        session.dataTask(with: urlRequest, completionHandler: completionHandler).resume()
     }
 }

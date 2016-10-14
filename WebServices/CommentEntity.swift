@@ -7,3 +7,21 @@
 //
 
 import Foundation
+class CommentEntity: IPopulable{
+    
+    var postId: Int?
+    var id: Int?
+    var name: String?
+    var email: String?
+    var body: String?
+    
+    
+    func populateEntity(map: [String: AnyObject]) {
+        postId = map["postId"] as? Int
+        id = map["id"] as? Int
+        name = map["name"] as? String
+        email = map["email"] as? String
+        body = map["body"] as? String
+    }
+
+}
