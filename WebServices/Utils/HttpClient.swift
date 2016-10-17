@@ -8,7 +8,13 @@
 
 import Foundation
 
-class HttpClient {
+class HttpClient : IClient {
+    
+    /**
+     * BASE_URL should end with /
+     */
+    var kBASE_URL = "http://jsonplaceholder.typicode.com/"
+    
     private func createStandardSession() -> URLSession{
         let config = URLSessionConfiguration.default
         return URLSession(configuration: config)
@@ -23,9 +29,23 @@ class HttpClient {
         return URLRequest(url: url)
     }
     
-    public func get(url: String, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Swift.Void){
+    func prepareUrl(endpoint: String) -> String {
+
+        return "\(kBASE_URL)\(endpoint)"
+    }
+    
+    /**
+     Make a GET request
+     
+     - parameters:
+     - endpoint: Should begin without /
+     - completionHandler: Delegate
+     */
+
+    public func get(endpoint: String, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Swift.Void){
         
         let session = createStandardSession()
+        let url: String = prepareUrl(endpoint: endpoint)
         let urlRequest = createUrlRequest(url: url)
         
         session.dataTask(with: urlRequest, completionHandler: completionHandler).resume()

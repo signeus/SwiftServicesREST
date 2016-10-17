@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class CommentEntity: IPopulable{
+class CommentEntity: IPopulable, IEntity{
     
     var postId: Int?
     var id: Int?

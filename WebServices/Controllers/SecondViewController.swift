@@ -24,12 +24,12 @@ class SecondViewController: UIViewController {
     }
 
     @IBAction func sendRequest(_ sender: AnyObject) {
-        HttpClient().get(url: "http://jsonplaceholder.typicode.com/posts/1") { (data: Data?, urlResponse: URLResponse?, error: Error?) in
-            let map = JsonDecoder().mapFromData(withData: data!)
-            let datoEntity: DatoEntity = DatoEntity()
-            datoEntity.populateEntity(map: map)
-            
-            print(datoEntity.title!)
+        DatoService().get { (entity: [IEntity]) in
+            let list: [DatoEntity] = entity as! [DatoEntity]
+            for datoEntity in list{
+                print(datoEntity.title)
+            }
         }
+        
     }
 }

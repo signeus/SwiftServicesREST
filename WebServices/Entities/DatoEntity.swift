@@ -6,7 +6,7 @@
 //  Copyright © 2016 Kevin. All rights reserved.
 //
 
-class DatoEntity: IPopulable{
+class DatoEntity: IPopulable, IEntity{
 
     var userId: Int?
     var id: Int?

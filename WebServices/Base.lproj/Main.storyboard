@@ -70,7 +70,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Request"/>
                                 <connections>
-                                    <action selector="sendRequest:" destination="FN8-Jx-333" eventType="touchUpInside" id="y7i-aT-Qqr"/>
+                                    <action selector="sendRequest:" destination="FN8-Jx-333" eventType="touchUpInside" id="0o1-Wd-3kb"/>
                                 </connections>
                             </button>
                         </subviews>

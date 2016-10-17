@@ -23,13 +23,18 @@ class ViewController: UIViewController {
 
     
     @IBAction func sendButtonTapped(_ sender: AnyObject) {
-        HttpClient().get(url: "http://jsonplaceholder.typicode.com/comments/2") { (data: Data?, urlResponse: URLResponse?, error: Error?) in
-            let map = JsonDecoder().mapFromData(withData: data!)
-            let commentEntity: CommentEntity = CommentEntity()
-            commentEntity.populateEntity(map: map)
-            
-            print(commentEntity.email!)
+        CommentService().get(byId: 1) { (entity: IEntity) in
+            let commentEntity: CommentEntity = entity as! CommentEntity
+            print(commentEntity.email)
         }
+        /*
+        CommentService().get { (entity: [AnyObject]) in
+            let list: [CommentEntity] = entity as! [CommentEntity]
+            for commentEntity in list{
+                print(commentEntity.email)
+            }
+        }
+         */
     }
 }
 

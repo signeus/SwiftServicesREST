@@ -7,19 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A461A051DB0E15A00C50FED /* JsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A461A041DB0E15A00C50FED /* JsonDecoder.swift */; };
-		0A461A071DB0EAF800C50FED /* CommentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A461A061DB0EAF800C50FED /* CommentEntity.swift */; };
-		0A461A091DB0EC8500C50FED /* IPopulable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A461A081DB0EC8500C50FED /* IPopulable.swift */; };
+		0A62A3601DB4E8B1006CAD04 /* CommentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62A35E1DB4E8B1006CAD04 /* CommentService.swift */; };
+		0A62A3611DB4E8B1006CAD04 /* DatoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62A35F1DB4E8B1006CAD04 /* DatoService.swift */; };
+		0A62A3661DB4E953006CAD04 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62A3641DB4E953006CAD04 /* HttpClient.swift */; };
+		0A62A3671DB4E953006CAD04 /* JsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62A3651DB4E953006CAD04 /* JsonDecoder.swift */; };
+		0A62A36A1DB4E95E006CAD04 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62A3681DB4E95E006CAD04 /* SecondViewController.swift */; };
+		0A62A36B1DB4E95E006CAD04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62A3691DB4E95E006CAD04 /* ViewController.swift */; };
+		0A62A36E1DB4E96C006CAD04 /* CommentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62A36C1DB4E96C006CAD04 /* CommentEntity.swift */; };
+		0A62A36F1DB4E96C006CAD04 /* DatoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62A36D1DB4E96C006CAD04 /* DatoEntity.swift */; };
+		0A62A3761DB4E99E006CAD04 /* IClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62A3721DB4E99E006CAD04 /* IClient.swift */; };
+		0A62A3771DB4E99E006CAD04 /* IEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62A3731DB4E99E006CAD04 /* IEntity.swift */; };
+		0A62A3781DB4E99E006CAD04 /* IPopulable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62A3741DB4E99E006CAD04 /* IPopulable.swift */; };
+		0A62A3791DB4E99E006CAD04 /* IService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62A3751DB4E99E006CAD04 /* IService.swift */; };
 		0A6E9E9F1DAF906000308180 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E9E9E1DAF906000308180 /* AppDelegate.swift */; };
-		0A6E9EA11DAF906000308180 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E9EA01DAF906000308180 /* ViewController.swift */; };
 		0A6E9EA41DAF906000308180 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A6E9EA21DAF906000308180 /* Main.storyboard */; };
 		0A6E9EA61DAF906000308180 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A6E9EA51DAF906000308180 /* Assets.xcassets */; };
 		0A6E9EA91DAF906000308180 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A6E9EA71DAF906000308180 /* LaunchScreen.storyboard */; };
 		0A6E9EB41DAF906000308180 /* WebServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E9EB31DAF906000308180 /* WebServicesTests.swift */; };
 		0A6E9EBF1DAF906000308180 /* WebServicesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E9EBE1DAF906000308180 /* WebServicesUITests.swift */; };
-		0A6E9ECD1DAFB4BC00308180 /* DatoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E9ECC1DAFB4BC00308180 /* DatoEntity.swift */; };
-		0A6E9ECF1DAFB96400308180 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E9ECE1DAFB96400308180 /* SecondViewController.swift */; };
-		0A6E9ED11DAFDB4200308180 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E9ED01DAFDB4200308180 /* HttpClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,12 +45,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A461A041DB0E15A00C50FED /* JsonDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonDecoder.swift; sourceTree = "<group>"; };
-		0A461A061DB0EAF800C50FED /* CommentEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentEntity.swift; sourceTree = "<group>"; };
-		0A461A081DB0EC8500C50FED /* IPopulable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPopulable.swift; sourceTree = "<group>"; };
+		0A62A35E1DB4E8B1006CAD04 /* CommentService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommentService.swift; path = Services/CommentService.swift; sourceTree = "<group>"; };
+		0A62A35F1DB4E8B1006CAD04 /* DatoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DatoService.swift; path = Services/DatoService.swift; sourceTree = "<group>"; };
+		0A62A3641DB4E953006CAD04 /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpClient.swift; path = Utils/HttpClient.swift; sourceTree = "<group>"; };
+		0A62A3651DB4E953006CAD04 /* JsonDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JsonDecoder.swift; path = Utils/JsonDecoder.swift; sourceTree = "<group>"; };
+		0A62A3681DB4E95E006CAD04 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = Controllers/SecondViewController.swift; sourceTree = "<group>"; };
+		0A62A3691DB4E95E006CAD04 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
+		0A62A36C1DB4E96C006CAD04 /* CommentEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommentEntity.swift; path = Entities/CommentEntity.swift; sourceTree = "<group>"; };
+		0A62A36D1DB4E96C006CAD04 /* DatoEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DatoEntity.swift; path = Entities/DatoEntity.swift; sourceTree = "<group>"; };
+		0A62A3721DB4E99E006CAD04 /* IClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IClient.swift; path = Interfaces/IClient.swift; sourceTree = "<group>"; };
+		0A62A3731DB4E99E006CAD04 /* IEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IEntity.swift; path = Interfaces/IEntity.swift; sourceTree = "<group>"; };
+		0A62A3741DB4E99E006CAD04 /* IPopulable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IPopulable.swift; path = Interfaces/IPopulable.swift; sourceTree = "<group>"; };
+		0A62A3751DB4E99E006CAD04 /* IService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IService.swift; path = Interfaces/IService.swift; sourceTree = "<group>"; };
 		0A6E9E9B1DAF906000308180 /* WebServices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebServices.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A6E9E9E1DAF906000308180 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0A6E9EA01DAF906000308180 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0A6E9EA31DAF906000308180 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A6E9EA51DAF906000308180 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A6E9EA81DAF906000308180 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,9 +69,6 @@
 		0A6E9EBA1DAF906000308180 /* WebServicesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebServicesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A6E9EBE1DAF906000308180 /* WebServicesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServicesUITests.swift; sourceTree = "<group>"; };
 		0A6E9EC01DAF906000308180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A6E9ECC1DAFB4BC00308180 /* DatoEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatoEntity.swift; sourceTree = "<group>"; };
-		0A6E9ECE1DAFB96400308180 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		0A6E9ED01DAFDB4200308180 /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +121,7 @@
 			children = (
 				0A7B67161DB1003B00E9BD66 /* Utils */,
 				0A7B67151DB1003000E9BD66 /* Controllers */,
+				0ACDE11F1DB4B58300E3690B /* Services */,
 				0A7B67141DB1001500E9BD66 /* Entities */,
 				0A7B67131DB1000900E9BD66 /* Interfaces */,
 				0A6E9E9E1DAF906000308180 /* AppDelegate.swift */,
@@ -143,7 +154,10 @@
 		0A7B67131DB1000900E9BD66 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
-				0A461A081DB0EC8500C50FED /* IPopulable.swift */,
+				0A62A3721DB4E99E006CAD04 /* IClient.swift */,
+				0A62A3731DB4E99E006CAD04 /* IEntity.swift */,
+				0A62A3741DB4E99E006CAD04 /* IPopulable.swift */,
+				0A62A3751DB4E99E006CAD04 /* IService.swift */,
 			);
 			name = Interfaces;
 			sourceTree = "<group>";
@@ -151,8 +165,8 @@
 		0A7B67141DB1001500E9BD66 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				0A6E9ECC1DAFB4BC00308180 /* DatoEntity.swift */,
-				0A461A061DB0EAF800C50FED /* CommentEntity.swift */,
+				0A62A36C1DB4E96C006CAD04 /* CommentEntity.swift */,
+				0A62A36D1DB4E96C006CAD04 /* DatoEntity.swift */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -160,8 +174,8 @@
 		0A7B67151DB1003000E9BD66 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				0A6E9EA01DAF906000308180 /* ViewController.swift */,
-				0A6E9ECE1DAFB96400308180 /* SecondViewController.swift */,
+				0A62A3681DB4E95E006CAD04 /* SecondViewController.swift */,
+				0A62A3691DB4E95E006CAD04 /* ViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -169,10 +183,19 @@
 		0A7B67161DB1003B00E9BD66 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				0A461A041DB0E15A00C50FED /* JsonDecoder.swift */,
-				0A6E9ED01DAFDB4200308180 /* HttpClient.swift */,
+				0A62A3641DB4E953006CAD04 /* HttpClient.swift */,
+				0A62A3651DB4E953006CAD04 /* JsonDecoder.swift */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		0ACDE11F1DB4B58300E3690B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0A62A35E1DB4E8B1006CAD04 /* CommentService.swift */,
+				0A62A35F1DB4E8B1006CAD04 /* DatoService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,14 +335,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A461A051DB0E15A00C50FED /* JsonDecoder.swift in Sources */,
-				0A6E9ED11DAFDB4200308180 /* HttpClient.swift in Sources */,
-				0A6E9ECF1DAFB96400308180 /* SecondViewController.swift in Sources */,
-				0A6E9EA11DAF906000308180 /* ViewController.swift in Sources */,
+				0A62A36F1DB4E96C006CAD04 /* DatoEntity.swift in Sources */,
+				0A62A36A1DB4E95E006CAD04 /* SecondViewController.swift in Sources */,
+				0A62A3611DB4E8B1006CAD04 /* DatoService.swift in Sources */,
+				0A62A3671DB4E953006CAD04 /* JsonDecoder.swift in Sources */,
+				0A62A3761DB4E99E006CAD04 /* IClient.swift in Sources */,
 				0A6E9E9F1DAF906000308180 /* AppDelegate.swift in Sources */,
-				0A461A071DB0EAF800C50FED /* CommentEntity.swift in Sources */,
-				0A6E9ECD1DAFB4BC00308180 /* DatoEntity.swift in Sources */,
-				0A461A091DB0EC8500C50FED /* IPopulable.swift in Sources */,
+				0A62A36B1DB4E95E006CAD04 /* ViewController.swift in Sources */,
+				0A62A3791DB4E99E006CAD04 /* IService.swift in Sources */,
+				0A62A3661DB4E953006CAD04 /* HttpClient.swift in Sources */,
+				0A62A3781DB4E99E006CAD04 /* IPopulable.swift in Sources */,
+				0A62A3771DB4E99E006CAD04 /* IEntity.swift in Sources */,
+				0A62A36E1DB4E96C006CAD04 /* CommentEntity.swift in Sources */,
+				0A62A3601DB4E8B1006CAD04 /* CommentService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
