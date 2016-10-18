@@ -25,6 +25,8 @@
 		0A6E9EA91DAF906000308180 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A6E9EA71DAF906000308180 /* LaunchScreen.storyboard */; };
 		0A6E9EB41DAF906000308180 /* WebServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E9EB31DAF906000308180 /* WebServicesTests.swift */; };
 		0A6E9EBF1DAF906000308180 /* WebServicesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E9EBE1DAF906000308180 /* WebServicesUITests.swift */; };
+		0A7C4D541DB60E3B0013511C /* Secundary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A7C4D531DB60E3B0013511C /* Secundary.storyboard */; };
+		0A7C4D561DB611D50013511C /* SecundaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7C4D551DB611D50013511C /* SecundaryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		0A6E9EBA1DAF906000308180 /* WebServicesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebServicesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A6E9EBE1DAF906000308180 /* WebServicesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServicesUITests.swift; sourceTree = "<group>"; };
 		0A6E9EC01DAF906000308180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A7C4D531DB60E3B0013511C /* Secundary.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Secundary.storyboard; sourceTree = "<group>"; };
+		0A7C4D551DB611D50013511C /* SecundaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecundaryViewController.swift; path = Controllers/SecundaryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,7 @@
 				0A7B67131DB1000900E9BD66 /* Interfaces */,
 				0A6E9E9E1DAF906000308180 /* AppDelegate.swift */,
 				0A6E9EA21DAF906000308180 /* Main.storyboard */,
+				0A7C4D531DB60E3B0013511C /* Secundary.storyboard */,
 				0A6E9EA51DAF906000308180 /* Assets.xcassets */,
 				0A6E9EA71DAF906000308180 /* LaunchScreen.storyboard */,
 				0A6E9EAA1DAF906000308180 /* Info.plist */,
@@ -176,6 +181,7 @@
 			children = (
 				0A62A3681DB4E95E006CAD04 /* SecondViewController.swift */,
 				0A62A3691DB4E95E006CAD04 /* ViewController.swift */,
+				0A7C4D551DB611D50013511C /* SecundaryViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -309,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A6E9EA91DAF906000308180 /* LaunchScreen.storyboard in Resources */,
+				0A7C4D541DB60E3B0013511C /* Secundary.storyboard in Resources */,
 				0A6E9EA61DAF906000308180 /* Assets.xcassets in Resources */,
 				0A6E9EA41DAF906000308180 /* Main.storyboard in Resources */,
 			);
@@ -344,6 +351,7 @@
 				0A62A36B1DB4E95E006CAD04 /* ViewController.swift in Sources */,
 				0A62A3791DB4E99E006CAD04 /* IService.swift in Sources */,
 				0A62A3661DB4E953006CAD04 /* HttpClient.swift in Sources */,
+				0A7C4D561DB611D50013511C /* SecundaryViewController.swift in Sources */,
 				0A62A3781DB4E99E006CAD04 /* IPopulable.swift in Sources */,
 				0A62A3771DB4E99E006CAD04 /* IEntity.swift in Sources */,
 				0A62A36E1DB4E96C006CAD04 /* CommentEntity.swift in Sources */,

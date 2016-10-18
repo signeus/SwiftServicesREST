@@ -36,5 +36,11 @@ class ViewController: UIViewController {
         }
          */
     }
+    @IBAction func showOtherScreenInOtherStoryBoard(_ sender: AnyObject) {
+        var mainView: UIStoryboard!
+        mainView = UIStoryboard(name: "Secundary", bundle: nil)
+        let viewcontroller : UIViewController = mainView.instantiateViewController(withIdentifier: "secundaryStoryBoard") as UIViewController
+        self.present(viewcontroller, animated: true, completion: nil)
+    }
 }
 

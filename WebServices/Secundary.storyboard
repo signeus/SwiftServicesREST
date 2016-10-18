@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Inf-j1-u6K">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SecundaryView-->
+        <scene sceneID="N3g-Rb-pgN">
+            <objects>
+                <viewController storyboardIdentifier="secundaryStoryBoard" title="SecundaryView" id="Inf-j1-u6K" customClass="SecundaryViewController" customModule="WebServices" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yyd-xA-iAw"/>
+                        <viewControllerLayoutGuide type="bottom" id="kiN-3T-dYl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="D0N-d6-wPf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JJ1-0J-8ib">
+                                <items>
+                                    <navigationItem title="Other screen" id="b3l-RU-ObR">
+                                        <barButtonItem key="leftBarButtonItem" style="done" id="hd8-TV-qi0">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dJ4-fO-beQ">
+                                                <rect key="frame" x="16" y="7" width="43" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="X">
+                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cerrarVentana:" destination="Inf-j1-u6K" eventType="touchUpInside" id="0zm-9J-1eL"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JJ1-0J-8ib" firstAttribute="top" secondItem="yyd-xA-iAw" secondAttribute="bottom" id="7BS-DD-TZS"/>
+                            <constraint firstItem="JJ1-0J-8ib" firstAttribute="leading" secondItem="D0N-d6-wPf" secondAttribute="leading" id="8i7-DE-Pt7"/>
+                            <constraint firstItem="JJ1-0J-8ib" firstAttribute="centerX" secondItem="D0N-d6-wPf" secondAttribute="centerX" id="igJ-ZZ-nWG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dnb-Ln-bce" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-242.40000000000001" y="111.99400299850076"/>
+        </scene>
+    </scenes>
+</document>
