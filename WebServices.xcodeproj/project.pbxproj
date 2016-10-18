@@ -27,6 +27,8 @@
 		0A6E9EBF1DAF906000308180 /* WebServicesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E9EBE1DAF906000308180 /* WebServicesUITests.swift */; };
 		0A7C4D541DB60E3B0013511C /* Secundary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A7C4D531DB60E3B0013511C /* Secundary.storyboard */; };
 		0A7C4D561DB611D50013511C /* SecundaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7C4D551DB611D50013511C /* SecundaryViewController.swift */; };
+		0ADF11411DB64E5F000EC856 /* WallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADF11401DB64E5F000EC856 /* WallViewController.swift */; };
+		0ADF11431DB65AC2000EC856 /* WallTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADF11421DB65AC2000EC856 /* WallTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		0A6E9EC01DAF906000308180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A7C4D531DB60E3B0013511C /* Secundary.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Secundary.storyboard; sourceTree = "<group>"; };
 		0A7C4D551DB611D50013511C /* SecundaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecundaryViewController.swift; path = Controllers/SecundaryViewController.swift; sourceTree = "<group>"; };
+		0ADF11401DB64E5F000EC856 /* WallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WallViewController.swift; path = Controllers/WallViewController.swift; sourceTree = "<group>"; };
+		0ADF11421DB65AC2000EC856 /* WallTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WallTableViewCell.swift; path = Utils/WallTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +186,7 @@
 				0A62A3681DB4E95E006CAD04 /* SecondViewController.swift */,
 				0A62A3691DB4E95E006CAD04 /* ViewController.swift */,
 				0A7C4D551DB611D50013511C /* SecundaryViewController.swift */,
+				0ADF11401DB64E5F000EC856 /* WallViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -191,6 +196,7 @@
 			children = (
 				0A62A3641DB4E953006CAD04 /* HttpClient.swift */,
 				0A62A3651DB4E953006CAD04 /* JsonDecoder.swift */,
+				0ADF11421DB65AC2000EC856 /* WallTableViewCell.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -347,7 +353,9 @@
 				0A62A3611DB4E8B1006CAD04 /* DatoService.swift in Sources */,
 				0A62A3671DB4E953006CAD04 /* JsonDecoder.swift in Sources */,
 				0A62A3761DB4E99E006CAD04 /* IClient.swift in Sources */,
+				0ADF11431DB65AC2000EC856 /* WallTableViewCell.swift in Sources */,
 				0A6E9E9F1DAF906000308180 /* AppDelegate.swift in Sources */,
+				0ADF11411DB64E5F000EC856 /* WallViewController.swift in Sources */,
 				0A62A36B1DB4E95E006CAD04 /* ViewController.swift in Sources */,
 				0A62A3791DB4E99E006CAD04 /* IService.swift in Sources */,
 				0A62A3661DB4E953006CAD04 /* HttpClient.swift in Sources */,
