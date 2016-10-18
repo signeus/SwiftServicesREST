@@ -11,6 +11,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var sendButton: UIButton!
     
+    @IBOutlet weak var textoStoryboard: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -36,11 +38,28 @@ class ViewController: UIViewController {
         }
          */
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "secundaryStoryboard"){
+            let navigationController = segue.destination as? UINavigationController
+            let destionationController = navigationController?.topViewController as? SecundaryViewController
+            
+            destionationController?.texto = textoStoryboard.text!
+        }
+    }
+    
     @IBAction func showOtherScreenInOtherStoryBoard(_ sender: AnyObject) {
+        /*
         var mainView: UIStoryboard!
         mainView = UIStoryboard(name: "Secundary", bundle: nil)
+        let viewcontroller : UIViewController = mainView.instantiateInitialViewController()! as UIViewController 
+         */
+        /*
         let viewcontroller : UIViewController = mainView.instantiateViewController(withIdentifier: "secundaryStoryBoard") as UIViewController
-        self.present(viewcontroller, animated: true, completion: nil)
+        */
+        
+        
+        
+        //self.present(viewcontroller, animated: true, completion: nil)
     }
 }
 

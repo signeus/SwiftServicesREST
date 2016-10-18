@@ -10,9 +10,13 @@ import UIKit
 
 class SecundaryViewController: UIViewController {
 
+    var texto: String = ""
+    @IBOutlet weak var labelText: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        labelText.text = texto
         // Do any additional setup after loading the view.
     }
 

@@ -38,8 +38,14 @@
                                 <state key="normal" title="Otro storyboard"/>
                                 <connections>
                                     <action selector="showOtherScreenInOtherStoryBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5XN-hh-6J9"/>
+                                    <segue destination="6cc-4O-7iD" kind="show" identifier="secundaryStoryboard" id="2DT-TI-qGv"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Escribe texto en el otro Storyboard" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Nq-fM-hVq">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -47,11 +53,14 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aOF-B1-d2E" secondAttribute="bottom" constant="20" id="EIT-m3-Huq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZEZ-ky-Ib4" secondAttribute="trailing" constant="89" id="Jfn-34-8Dl"/>
                             <constraint firstItem="SuK-Wz-Fgi" firstAttribute="top" secondItem="ZEZ-ky-Ib4" secondAttribute="bottom" constant="464" id="LEU-as-21l"/>
+                            <constraint firstItem="7Nq-fM-hVq" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="M2f-VZ-W49"/>
                             <constraint firstAttribute="trailingMargin" secondItem="aOF-B1-d2E" secondAttribute="trailing" constant="107" id="X2a-k4-5fo"/>
                             <constraint firstItem="aOF-B1-d2E" firstAttribute="top" secondItem="SuK-Wz-Fgi" secondAttribute="bottom" constant="21" id="Xdq-xe-qoD"/>
                             <constraint firstItem="ZEZ-ky-Ib4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Z3G-lx-Res"/>
+                            <constraint firstItem="SuK-Wz-Fgi" firstAttribute="top" secondItem="7Nq-fM-hVq" secondAttribute="bottom" constant="8" id="ZfY-l5-8Jj"/>
                             <constraint firstItem="aOF-B1-d2E" firstAttribute="top" secondItem="ZEZ-ky-Ib4" secondAttribute="bottom" constant="515" id="cV9-GQ-RTd"/>
                             <constraint firstItem="ZEZ-ky-Ib4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="89" id="ijj-4r-i4H"/>
+                            <constraint firstItem="7Nq-fM-hVq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nmv-8x-xgI"/>
                             <constraint firstItem="SuK-Wz-Fgi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="89" id="q2N-c0-Mho"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SuK-Wz-Fgi" secondAttribute="trailing" constant="107" id="u1t-Cl-jCn"/>
                         </constraints>
@@ -59,11 +68,20 @@
                     <navigationItem key="navigationItem" id="Z4S-WW-ddz"/>
                     <connections>
                         <outlet property="sendButton" destination="aOF-B1-d2E" id="a0x-OC-JXX"/>
+                        <outlet property="textoStoryboard" destination="7Nq-fM-hVq" id="TwW-TT-2dL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+        </scene>
+        <!--Secundary-->
+        <scene sceneID="IvU-RR-Oq0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Secundary" id="6cc-4O-7iD" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x8g-Fr-TLX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="604"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="96m-p5-YDX">
